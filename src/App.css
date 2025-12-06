@@ -27,3 +27,84 @@ main {
   width: 45%;
   padding: 2rem 2rem;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section p {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.standarad-input {
+  background-color: #fbfbfc;
+  border: 1px solid #ccc;
+  color: #333;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.3s ease;
+}
+.standarad-input:focus {
+  box-shadow: 0 0 0 3px rgba(0, 85, 255, 0.8);
+  outline: none;
+}
+.section div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.standard-btn {
+  font-size: 1.2rem;
+  background-color: #333;
+  border: none;
+  border-radius: 8px;
+  color: #e9ecef;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+.standard-btn:hover {
+  background-color: #212121;
+}
+.primary-btn {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  color: #e9ecef;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  background-color: rgb(5, 187, 5);
+}
+.primary-btn:hover {
+  background-color: rgb(3, 133, 3);
+}
+.secondary-btn {
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  color: #e9ecef;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  background-color: red;
+}
+.secondary-btn:hover {
+  background-color: rgb(215, 2, 2);
+}
