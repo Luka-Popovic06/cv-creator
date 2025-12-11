@@ -26,8 +26,6 @@ main {
   margin: 4.2rem auto 0;
   width: 45%;
   padding: 2rem 2rem;
-}
-form {
   display: flex;
   flex-direction: column;
   gap: 30px;

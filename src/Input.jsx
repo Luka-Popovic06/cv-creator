@@ -4,6 +4,7 @@ const Input = ({
   variation,
   action,
   inputName,
+  value,
 }) => {
   let inputClass;
   if (variation === "standard") inputClass = "standarad-input";
@@ -12,6 +13,7 @@ const Input = ({
       type={inputType}
       name={inputName}
       placeholder={inputPlaceholder}
+      value={value}
       className={inputClass}
       onChange={(e) => action(e.target.value)}
     />

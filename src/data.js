@@ -2,10 +2,9 @@ export const cvFormSections = [
   {
     id: 1,
     title: "Personal information",
-    sec: [
+    blocks: [
       {
         id: crypto.randomUUID(),
-        finded: false,
         inputs: [
           { name: "firstName", placeholder: "First Name" },
           { name: "lastName", placeholder: "Last Name" },
@@ -21,10 +20,9 @@ export const cvFormSections = [
   {
     id: 2,
     title: "Education",
-    sec: [
+    blocks: [
       {
         id: crypto.randomUUID(),
-        finded: false,
         inputs: [
           { name: "universityName", placeholder: "University Name" },
           { name: "city", placeholder: "City" },
@@ -41,10 +39,9 @@ export const cvFormSections = [
   {
     id: 3,
     title: "Experience",
-    sec: [
+    blocks: [
       {
         id: crypto.randomUUID(),
-        finded: false,
         inputs: [
           { name: "position", placeholder: "Position" },
           { name: "company", placeholder: "Company" },
