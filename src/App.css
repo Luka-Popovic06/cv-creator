@@ -59,23 +59,7 @@ main {
   flex-direction: column;
   gap: 10px;
 }
-
-.standard-btn {
-  font-size: 1.2rem;
-  background-color: #333;
-  border: none;
-  border-radius: 8px;
-  color: #e9ecef;
-  cursor: pointer;
-  font-weight: 600;
-  padding: 1rem;
-  transition: all 0.3s ease;
-  width: 100%;
-}
-.standard-btn:hover {
-  background-color: #212121;
-}
-.primary-btn {
+.btn {
   margin-top: 20px;
   font-size: 1.2rem;
   border: none;
@@ -86,23 +70,22 @@ main {
   padding: 1rem;
   transition: all 0.3s ease;
   width: 100%;
+}
+.btn-standard {
+  background-color: #333;
+}
+.btn-standard:hover {
+  background-color: #212121;
+}
+.btn-primary {
   background-color: rgb(5, 187, 5);
 }
-.primary-btn:hover {
+.btn-primary:hover {
   background-color: rgb(3, 133, 3);
 }
-.secondary-btn {
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 8px;
-  color: #e9ecef;
-  cursor: pointer;
-  font-weight: 600;
-  padding: 1rem;
-  transition: all 0.3s ease;
-  width: 100%;
+.btn-secondary {
   background-color: red;
 }
-.secondary-btn:hover {
+.btn-secondary:hover {
   background-color: rgb(215, 2, 2);
 }
