@@ -6,13 +6,13 @@ export const cvFormSections = [
       {
         id: crypto.randomUUID(),
         inputs: [
-          { name: "firstName", placeholder: "First Name" },
-          { name: "lastName", placeholder: "Last Name" },
-          { name: "title", placeholder: "Title" },
-          { name: "adress", placeholder: "Adress" },
-          { name: "phoneNumber", placeholder: "Phone Number" },
-          { name: "email", placeholder: "Email" },
-          { name: "description", placeholder: "Description" },
+          { name: "firstName", placeholder: "First Name", firstName: "" },
+          { name: "lastName", placeholder: "Last Name", lastName: "" },
+          { name: "title", placeholder: "Title", title: "" },
+          { name: "adress", placeholder: "Adress", adress: "" },
+          { name: "phoneNumber", placeholder: "Phone Number", phoneNumber: "" },
+          { name: "email", placeholder: "Email", email: "" },
+          { name: "description", placeholder: "Description", description: "" },
         ],
       },
     ],
@@ -24,14 +24,18 @@ export const cvFormSections = [
       {
         id: crypto.randomUUID(),
         inputs: [
-          { name: "universityName", placeholder: "University Name" },
-          { name: "city", placeholder: "City" },
-          { name: "degree", placeholder: "Degree" },
-          { name: "subject", placeholder: "Subject" },
-          { name: "fromDate", placeholder: "From (dd/mm/yy)" },
-          { name: "toDate", placeholder: "To (dd/mm/yy)" },
+          {
+            name: "universityName",
+            placeholder: "University Name",
+            universityName: "",
+          },
+          { name: "city", placeholder: "City", city: "" },
+          { name: "degree", placeholder: "Degree", degree: "" },
+          { name: "subject", placeholder: "Subject", subject: "" },
+          { name: "fromDate", placeholder: "From (dd/mm/yy)", fromDate: "" },
+          { name: "toDate", placeholder: "To (dd/mm/yy)", toDate: "" },
         ],
-        clear: [{ btnText: "Delete", variation: "standard" }],
+        clear: [{ btnText: "Delete", variation: "standard", value: "" }],
       },
     ],
     add: [{ btnText: "Add Education", variation: "standard" }],
@@ -43,11 +47,11 @@ export const cvFormSections = [
       {
         id: crypto.randomUUID(),
         inputs: [
-          { name: "position", placeholder: "Position" },
-          { name: "company", placeholder: "Company" },
-          { name: "city", placeholder: "City" },
-          { name: "fromDate", placeholder: "From (dd/mm/yy)" },
-          { name: "toDate", placeholder: "To (dd/mm/yy)" },
+          { name: "position", placeholder: "Position", position: "" },
+          { name: "company", placeholder: "Company", company: "" },
+          { name: "city", placeholder: "City", city: "" },
+          { name: "fromDate", placeholder: "From (dd/mm/yy)", fromDate: "" },
+          { name: "toDate", placeholder: "To (dd/mm/yy)", toDate: "" },
         ],
         clear: [{ btnText: "Delete", variation: "standard" }],
       },
@@ -55,36 +59,3 @@ export const cvFormSections = [
     add: [{ btnText: "Add Experience", variation: "standard" }],
   },
 ];
-
-export const cvSections = {
-  personalinformation: [
-    {
-      firstName: "",
-      lastName: "",
-      title: "",
-      adress: "",
-      phoneNumber: "",
-      email: "",
-      description: "",
-    },
-  ],
-  education: [
-    {
-      universityName: "",
-      city: "",
-      degree: "",
-      subject: "",
-      fromDate: "",
-      toDate: "",
-    },
-  ],
-  experience: [
-    {
-      position: "",
-      company: "",
-      city: "",
-      fromDate: "",
-      toDate: "",
-    },
-  ],
-};
