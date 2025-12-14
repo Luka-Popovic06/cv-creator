@@ -42,6 +42,34 @@ function App() {
     );
   };
 
+  //Updating Text
+  const updatePersonalInformation = (inputName, inputValue, inputIndex) => {
+    setSections((prev) =>
+      prev.map((section) =>
+        section.title !== "Personal information"
+          ? section
+          : {
+              ...section,
+              info: {
+                ...section.info,
+                inputs: section.info.inputs.map((input, index) =>
+                  index !== inputIndex
+                    ? input
+                    : {
+                        ...input,
+                        [inputName]: inputValue,
+                      }
+                ),
+              },
+            }
+      )
+    );
+  };
+  /*Nampravi da se slika dodaje
+da li mogu sliku da dodam u ovaj state ako ne pravim poseban state
+za printanje pogledaj react to print
+how to collect image and sve it to statte in (javaScript) react
+ */
   const updateBlockInput = (
     block,
     blockId,
