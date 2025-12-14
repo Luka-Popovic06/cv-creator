@@ -42,7 +42,6 @@ function App() {
     );
   };
 
-  //Updating Text
   const updateBlockInput = (
     block,
     blockId,
@@ -74,7 +73,7 @@ function App() {
   ) => {
     setSections((prev) =>
       prev.map((section) =>
-        section.title !== title
+        section.title !== title || title === "Personal information"
           ? section
           : {
               ...section,
@@ -92,6 +91,10 @@ function App() {
     );
   };
 
+  const logCv = () => {
+    console.log(sections);
+  };
+
   return (
     <>
       <header>
@@ -101,10 +104,22 @@ function App() {
         {sections.map((section) => (
           <div key={section.id} className="section">
             <p>{section.title}</p>
-
-            {section.blocks.map((block) => (
+            {section?.info?.inputs?.map((input, inputIndex) => (
+              <Input
+                key={inputIndex}
+                inputType="text"
+                inputName={input.name}
+                inputPlaceholder={input.placeholder}
+                variation="standard"
+                value={input[input.name]}
+                action={(value) =>
+                  updatePersonalInformation(input.name, value, inputIndex)
+                }
+              />
+            ))}
+            {section?.blocks?.map((block) => (
               <div key={block.id}>
-                {block.inputs?.map((input, inputIndex) => (
+                {block?.inputs?.map((input, inputIndex) => (
                   <Input
                     key={inputIndex}
                     inputType="text"

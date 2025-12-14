@@ -1,24 +1,22 @@
 export const cvFormSections = [
   {
-    id: 1,
+    id: crypto.randomUUID(),
     title: "Personal information",
-    blocks: [
-      {
-        id: crypto.randomUUID(),
-        inputs: [
-          { name: "firstName", placeholder: "First Name", firstName: "" },
-          { name: "lastName", placeholder: "Last Name", lastName: "" },
-          { name: "title", placeholder: "Title", title: "" },
-          { name: "adress", placeholder: "Adress", adress: "" },
-          { name: "phoneNumber", placeholder: "Phone Number", phoneNumber: "" },
-          { name: "email", placeholder: "Email", email: "" },
-          { name: "description", placeholder: "Description", description: "" },
-        ],
-      },
-    ],
+    info: {
+      id: crypto.randomUUID(),
+      inputs: [
+        { name: "firstName", placeholder: "First Name", firstName: "" },
+        { name: "lastName", placeholder: "Last Name", lastName: "" },
+        { name: "title", placeholder: "Title", title: "" },
+        { name: "adress", placeholder: "Adress", adress: "" },
+        { name: "phoneNumber", placeholder: "Phone Number", phoneNumber: "" },
+        { name: "email", placeholder: "Email", email: "" },
+        { name: "description", placeholder: "Description", description: "" },
+      ],
+    },
   },
   {
-    id: 2,
+    id: crypto.randomUUID(),
     title: "Education",
     blocks: [
       {
@@ -41,7 +39,7 @@ export const cvFormSections = [
     add: [{ btnText: "Add Education", variation: "standard" }],
   },
   {
-    id: 3,
+    id: crypto.randomUUID(),
     title: "Experience",
     blocks: [
       {
