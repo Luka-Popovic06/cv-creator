@@ -104,3 +104,52 @@ img {
   object-fit: cover;
   width: 100%;
 }
+.cv-box {
+  bottom: 0;
+  position: absolute;
+  right: 20%;
+  top: 1%;
+  width: 60%;
+  min-height: 1000px;
+  z-index: 200;
+  background-color: #fff;
+}
+.cv-header {
+  height: 10%;
+  background-color: #44a857;
+  padding: 20px;
+  color: #fff;
+}
+.p-name {
+  font-size: 35px;
+  font-weight: 600;
+}
+.info-container {
+  display: flex;
+  height: 86%;
+}
+.info-box {
+  width: 70%;
+  padding: 30px;
+  height: 95.4%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.info-mini-box {
+  min-height: 90px;
+}
+.p-info-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #44a857;
+  padding-bottom: 2px;
+  border-bottom: 1px #b1b1b1 solid;
+  margin-bottom: 5px;
+}
+
+.personal-details-box {
+  width: 30%;
+  background-color: #ededed;
+  height: 100%;
+}
