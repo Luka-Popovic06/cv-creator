@@ -89,3 +89,18 @@ main {
 .btn-secondary:hover {
   background-color: rgb(215, 2, 2);
 }
+label input[type="file"] {
+  display: none;
+}
+label {
+  cursor: pointer;
+}
+label span {
+  color: #686868;
+  font-family: inherit;
+  font-size: 1rem;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+}
