@@ -39,7 +39,7 @@ main {
   font-size: 1.4rem;
   font-weight: 600;
 }
-.standarad-input {
+.standard {
   background-color: #fbfbfc;
   border: 1px solid #ccc;
   color: #333;
@@ -50,7 +50,7 @@ main {
   border-radius: 0.5rem;
   transition: box-shadow 0.3s ease;
 }
-.standarad-input:focus {
+.standard:focus {
   box-shadow: 0 0 0 3px rgba(0, 85, 255, 0.8);
   outline: none;
 }
