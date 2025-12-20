@@ -138,6 +138,9 @@ img {
 }
 .info-mini-box {
   min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .p-info-title {
   font-size: 20px;
@@ -152,4 +155,75 @@ img {
   width: 30%;
   background-color: #ededed;
   height: 100%;
+}
+.details-info {
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.details-info-mini-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.details-info-mini-box p {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #4b4b4b;
+}
+.details-info-mini-box span {
+  font-size: 1.04rem;
+  font-weight: 400;
+  color: #686868;
+}
+.description {
+  font-style: italic;
+  color: #4b4b4b;
+  font-size: 1.12rem;
+}
+.experience-box,
+.education-box {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  font-size: 1.12rem;
+  color: #686868;
+}
+.experience-box div,
+.education-box div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.p-date {
+  font-weight: 600;
+  color: #4b4b4b;
+}
+.degree,
+.position {
+  color: #4b4b4b;
+  font-weight: 600;
+}
+.btn-box {
+  display: flex;
+  gap: 20px;
+  width: 220px;
+  height: 75px;
+  position: absolute;
+  top: 69px;
+  left: 6rem;
+  z-index: 100;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(33, 33, 33, 0.8);
+  z-index: 1;
 }
